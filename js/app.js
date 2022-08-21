@@ -9,3 +9,17 @@ let flights = [
         remarks:"on time"
     }
 ]
+
+function populationTable() {
+    for (const flight of flights) {
+        const tableRow = document.createElement("tr")
+
+        for (const flightDetail in flight){
+            const tableCell = document.createElement("td")
+            console.log('flightDetail',flightDetail)
+        }
+    tableBody.append(tableRow)
+    }
+}
+
+populationTable()
